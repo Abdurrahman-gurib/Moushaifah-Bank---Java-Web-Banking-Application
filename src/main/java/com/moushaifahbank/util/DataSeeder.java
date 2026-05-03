@@ -1,0 +1,2 @@
+package com.moushaifahbank.util;
+public class DataSeeder{private static boolean done=false; public static synchronized void seed(){if(done)return; UserDAO dao=new UserDAO(); if(dao.findByEmail("demo@moushaifahbank.com")==null){dao.register("Amina Rahman","demo@moushaifahbank.com","+230 5123 4567","Password123","blue"); dao.register("Yusuf Khan","yusuf@moushaifahbank.com","+230 5988 2200","Password123","blue");} done=true;}}
